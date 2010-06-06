@@ -35,16 +35,16 @@
 #define GETNAMEINFO_TYPE_ARG2 socklen_t
 
 /* Define to the type of args 4 and 6 for getnameinfo. */
-#define GETNAMEINFO_TYPE_ARG46 size_t
+#define GETNAMEINFO_TYPE_ARG46 int
 
 /* Define to the type of arg 7 for getnameinfo. */
-#define GETNAMEINFO_TYPE_ARG7 unsigned int
+#define GETNAMEINFO_TYPE_ARG7 int
 
 /* Specifies the number of arguments to getservbyport_r */
-#define GETSERVBYPORT_R_ARGS 6
+/* #undef GETSERVBYPORT_R_ARGS */
 
 /* Specifies the size of the buffer to pass to getservbyport_r */
-#define GETSERVBYPORT_R_BUFSIZE 4096
+/* #undef GETSERVBYPORT_R_BUFSIZE */
 
 /* Define to 1 if you have AF_INET6. */
 #define HAVE_AF_INET6 1
@@ -101,7 +101,7 @@
 #define HAVE_GETADDRINFO 1
 
 /* Define to 1 if the getaddrinfo function is threadsafe. */
-#define HAVE_GETADDRINFO_THREADSAFE 1
+/* #undef HAVE_GETADDRINFO_THREADSAFE */
 
 /* Define to 1 if you have the gethostbyaddr function. */
 #define HAVE_GETHOSTBYADDR 1
@@ -116,7 +116,7 @@
 #define HAVE_GETNAMEINFO 1
 
 /* Define to 1 if you have the getservbyport_r function. */
-/* #define HAVE_GETSERVBYPORT_R 1 */
+/* #undef HAVE_GETSERVBYPORT_R */
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #define HAVE_GETTIMEOFDAY 1
@@ -267,7 +267,7 @@
 /* #undef HAVE_STRNICMP */
 
 /* Define to 1 if you have the <stropts.h> header file. */
-#define HAVE_STROPTS_H 1
+/* #undef HAVE_STROPTS_H */
 
 /* Define to 1 if you have struct addrinfo. */
 #define HAVE_STRUCT_ADDRINFO 1
@@ -352,7 +352,7 @@
 /* #undef NO_MINUS_C_MINUS_O */
 
 /* cpu-machine-OS */
-#define OS "i686-pc-linux-gnu"
+#define OS "i686-pc-cygwin"
 
 /* Name of package */
 #define PACKAGE "c-ares"
@@ -495,7 +495,7 @@
 #endif
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-#define _FILE_OFFSET_BITS 64
+/* #undef _FILE_OFFSET_BITS */
 
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
