@@ -59,7 +59,7 @@ def GuessOS():
     return 'openbsd'
   elif id == 'SunOS':
     return 'solaris'
-  elif id == 'CYGWIN_NT-5.1':
+  elif id.find('CYGWIN') >= 0:
     return 'cygwin'
   else:
     return None
